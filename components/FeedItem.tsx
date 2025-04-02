@@ -9,6 +9,7 @@ function FeedItem({}: FeedItemProps) {
     <View style={styles.container}>
       <View style={styles.contentContainer}>
         <Text>게시글 제목</Text>
+        <Text>게시글 내용</Text>
       </View>
       <View style={styles.menuContainer}></View>
     </View>
