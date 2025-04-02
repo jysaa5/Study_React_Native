@@ -1,9 +1,6 @@
-import CustomButton from "@/components/CustomButton";
 import FixedBottomCTA from '@/components/FixedBottomCTA';
-import InputField from "@/components/InputField";
-import { colors } from "@/constants";
-import { View, StyleSheet } from "react-native";
-import { useSafeAreaInsets } from "react-native-safe-area-context";
+import InputField from '@/components/InputField';
+import { View, StyleSheet } from 'react-native';
 
 export default function SignupScreen() {
   return (
@@ -13,7 +10,7 @@ export default function SignupScreen() {
         <InputField label="비밀번호" placeholder="비밀번호를 입력해주세요." />
         <InputField label="비밀번호 확인" placeholder="비밀번호를 입력해주세요." />
       </View>
-      <FixedBottomCTA label='회원가입하기' onPress={() => {}}/>
+      <FixedBottomCTA label="회원가입하기" onPress={() => {}} />
     </>
   );
 }
@@ -23,5 +20,5 @@ const styles = StyleSheet.create({
     flex: 1,
     margin: 16,
     gap: 16,
-  }
+  },
 });

@@ -1,14 +1,10 @@
-import CustomButton from '@/components/CustomButton';
-import { Text, SafeAreaView } from "react-native";
-import {router} from "expo-router"
+import { SafeAreaView } from 'react-native';
+import FeedItem from '@/components/FeedItem';
 
 export default function HomeScreen() {
   return (
     <SafeAreaView>
-      <Text>홈스크린</Text>
-      <CustomButton label='버튼' onPress={() => router.push('../auth')}/>
+      <FeedItem />
     </SafeAreaView>
   );
 }
-
-
