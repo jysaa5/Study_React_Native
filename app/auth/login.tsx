@@ -19,7 +19,7 @@ export default function LoginScreen() {
     },
   });
 
-  const onSubmit: SubmitHandler<FormValues> = (formValues: FormValues) => {
+  const onSubmit = (formValues: FormValues) => {
     console.log('formValues', formValues);
   };
 

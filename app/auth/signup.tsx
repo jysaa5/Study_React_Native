@@ -1,5 +1,4 @@
 import FixedBottomCTA from '@/components/FixedBottomCTA';
-import InputField from '@/components/InputField';
 import { View, StyleSheet } from 'react-native';
 import { FormProvider, SubmitHandler, useForm } from 'react-hook-form';
 import EmailInput from '@/components/EmailInput';
@@ -29,7 +28,7 @@ export default function SignupScreen() {
     <FormProvider {...signupForm}>
       <View style={styles.container}>
         <EmailInput />
-        <PasswordInput />
+        <PasswordInput submitBehavior="submit" />
         <PasswordConfirmInput />
       </View>
       <FixedBottomCTA label="회원가입하기" onPress={signupForm.handleSubmit(onSubmit)} />
