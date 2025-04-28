@@ -6,6 +6,7 @@ async function saveSecureStore(key: string, value: string) {
 
 async function getSecureStore(key: string) {
   const storedData = (await SecureStore.getItemAsync(key)) ?? null;
+  return storedData;
 }
 
 async function deleteSecureStore(key: string) {
