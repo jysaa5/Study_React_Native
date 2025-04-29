@@ -24,7 +24,8 @@ export default function SignupScreen() {
 
   const onSubmit: SubmitHandler<FormValues> = (formValues: FormValues) => {
     const { email, password } = formValues;
-    signupMutation.mutate({ email: email, password: password });
+    console.log(email, password);
+    signupMutation.mutate({ email, password });
   };
 
   return (

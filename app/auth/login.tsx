@@ -8,7 +8,6 @@ import useAuth from '@/hooks/queries/useAuth';
 type FormValues = {
   email: string;
   password: string;
-  passwordConfirm: string;
 };
 
 export default function LoginScreen() {
@@ -17,7 +16,6 @@ export default function LoginScreen() {
     defaultValues: {
       email: '',
       password: '',
-      passwordConfirm: '',
     },
   });
 
